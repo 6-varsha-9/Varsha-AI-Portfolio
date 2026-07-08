@@ -59,4 +59,4 @@ Portfolio: https://varsha-ai-portfolio-nine.vercel.app
 
 GitHub: https://github.com/6-varsha-9
 
-LinkedIn: https://www.linkedin.com/in/varsha-nandakumar-7713b825a/        M
+LinkedIn: https://www.linkedin.com/in/varsha-nandakumar-7713b825a/        
