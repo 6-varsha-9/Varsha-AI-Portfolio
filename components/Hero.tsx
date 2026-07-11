@@ -288,7 +288,7 @@ export default function Hero({ onOpenChat }: { onOpenChat: () => void; onOpenRes
                 alt="Varsha N"
                 fill
                 priority
-                className="object-cover object-top transition-transform duration-700 hover:scale-105 hover:rotate-1"
+                className="object-cover object-top transition-transform duration-700 hover:scale-105"
               />
             </div>
           </motion.div>
