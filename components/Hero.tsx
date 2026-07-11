@@ -94,7 +94,9 @@ export default function Hero({ onOpenChat }: { onOpenChat: () => void; onOpenRes
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-20">
+        <div className="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
+          <div className="text-center lg:text-left">
 
         {/* Open-to-work badge */}
         <motion.div
@@ -136,7 +138,7 @@ export default function Hero({ onOpenChat }: { onOpenChat: () => void; onOpenRes
           style={{ lineHeight: 1.0 }}
         >
           <span
-            className="block text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] select-none"
+            className="block text-6xl sm:text-7xl md:text-8xl lg:text-[7.5rem] select-none"
             style={{
               background: 'linear-gradient(135deg, #ffffff 0%, #e2f0ff 30%, #00d4ff 65%, #0066ff 100%)',
               WebkitBackgroundClip: 'text',
@@ -154,7 +156,7 @@ export default function Hero({ onOpenChat }: { onOpenChat: () => void; onOpenRes
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 2.25 }}
-          className="flex items-center justify-center gap-2 mb-5 h-10"
+          className="flex items-center justify-center lg:justify-start gap-2 mb-5 h-10"
         >
           <span className="text-xl sm:text-2xl text-slate-300 font-light tracking-wide">
             {typedText}
@@ -168,7 +170,7 @@ export default function Hero({ onOpenChat }: { onOpenChat: () => void; onOpenRes
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 2.4 }}
-          className="text-slate-400 text-base sm:text-lg leading-relaxed max-w-xl mx-auto mb-4 font-light"
+          className="text-slate-400 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-4 font-light"
         >
           AI & Data Science Engineer passionate about{' '}
           <span className="text-slate-200">Machine Learning</span>,{' '}
@@ -192,7 +194,7 @@ export default function Hero({ onOpenChat }: { onOpenChat: () => void; onOpenRes
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 2.65 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 flex-wrap"
+          className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 mb-10 flex-wrap"
         >
           <motion.button
             onClick={onOpenChat}
@@ -246,7 +248,7 @@ export default function Hero({ onOpenChat }: { onOpenChat: () => void; onOpenRes
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 2.85 }}
-          className="flex items-center justify-center gap-6 sm:gap-10"
+          className="flex items-center justify-center lg:justify-start gap-6 sm:gap-10"
         >
           {[
             { value: '3+', label: 'AI Projects' },
@@ -260,6 +262,37 @@ export default function Hero({ onOpenChat }: { onOpenChat: () => void; onOpenRes
             </div>
           ))}
         </motion.div>
+      </div>
+          <motion.div
+            initial={{ opacity: 0, x: 60 }}
+            animate={{opacity: 1, x: 0, y: [0, -10, 0],}}
+            transition={{ duration: 5, delay: 2, repeat: Infinity, ease: "easeInOut", }}
+            className="hidden lg:flex justify-center"
+          >
+            <div
+              className="relative w-[360px] h-[480px] rounded-[32px] overflow-hidden backdrop-blur-xl"
+              style={{
+              background: "linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03))",
+              border: "1px solid rgba(0,212,255,0.35)",
+              boxShadow: "0 0 60px rgba(0,212,255,0.20), inset 0 0 30px rgba(255,255,255,0.05)",
+              }}
+            >
+              <div
+                className="absolute inset-0 -z-10 blur-3xl"
+                style={{
+                background: "radial-gradient(circle, rgba(0,212,255,0.25), transparent 70%)",
+                }}
+              />
+              <Image
+                src="/Profile.png"
+                alt="Varsha N"
+                fill
+                priority
+                className="object-cover object-top transition-transform duration-700 hover:scale-105 hover:rotate-1"
+              />
+            </div>
+          </motion.div>
+        </div>
       </div>
 
       {/* Scroll indicator */}
