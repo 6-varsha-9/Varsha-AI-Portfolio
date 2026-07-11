@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Sparkles, Download, FileText } from 'lucide-react';
+import Image from 'next/image';
 
 const RESUME_URL = '/VARSHA_N_-_RESUME.pdf';
 const RESUME_DOWNLOAD_NAME = 'Varsha_N_Resume.pdf';
