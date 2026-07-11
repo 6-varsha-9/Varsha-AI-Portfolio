@@ -264,10 +264,10 @@ export default function Hero({ onOpenChat }: { onOpenChat: () => void; onOpenRes
         </motion.div>
       </div>
           <motion.div
-            initial={{ opacity: 0, x: 60 }}
-            animate={{opacity: 1, x: 0, y: [0, -10, 0],}}
-            transition={{ duration: 5, delay: 2, repeat: Infinity, ease: "easeInOut", }}
-            className="hidden lg:flex justify-center"
+               initial={{ opacity: 0, x: 60 }}
+               animate={{ opacity: 1, x: 0 }}
+               transition={{ duration: 0.8, delay: 2,}}
+               className="hidden lg:flex justify-center"
           >
             <div
               className="relative w-[360px] h-[480px] rounded-[32px] overflow-hidden backdrop-blur-xl"
